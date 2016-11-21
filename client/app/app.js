@@ -26,11 +26,12 @@ import constants from './app.constants';
 import util from '../components/util/util.module';
 import socket from '../components/socket/socket.service';
 import startPage from './startPage/startPage.component';
+import personalPage from './personalPage/personalPage.component';
 
 import './app.scss';
 
 angular.module('userInterfaceApp', [ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter,
-  uiBootstrap, _Auth, account, admin, navbar, footer, startPage, constants, socket, util
+  uiBootstrap, _Auth, account, admin, navbar, footer, startPage, personalPage, constants, socket, util
 ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {

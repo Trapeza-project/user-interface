@@ -7,7 +7,7 @@ img {
     max-height: 100%;
 }
 
-#banner {
+#startPage-banner {
   padding-top: 3%;
   padding-bottom: 3%;
   text-align: center;
@@ -16,14 +16,26 @@ img {
   background-size: 100% auto;
 }
 
-#getStartedButton {
+#startPage-getStartedButton {
   margin-top: 5%;
   margin-bottom: 5%;
 }
 
-#ucinfo {
+#startPage-ucinfo {
   background-color: #191c21;
   color: white;
+}
+
+.startPage-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+.startPage-row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
 }
 
 .nomargin {
@@ -33,25 +45,21 @@ img {
   padding: 0 !important;
 }
 
+/***********************
+  CUSTON BTN VALUES
+************************/
+
 .btn {
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px !important;
-  padding: 10px 16px;
+    padding: 14px 24px;
+    border: 1px solid transparent;
+    border-radius: 4px !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
 }
 
 .btn-lg {
@@ -96,31 +104,4 @@ img {
     border-color: #007299;
     color: #007299;
     box-shadow: none;
-}
-
-/***********************
-  CUSTON BTN VALUES
-************************/
-
-.btn {
-    padding: 14px 24px;
-    border: 0 none;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-.btn:focus, .btn:active:focus, .btn.active:focus {
-    outline: 0 none;
-}
-
-.row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-  flex-wrap: wrap;
-}
-.row > [class*='col-'] {
-  display: flex;
-  flex-direction: column;
 }
